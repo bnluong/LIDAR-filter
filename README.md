@@ -14,14 +14,13 @@ Lists of items needed to setup/run the project.
 1. Item 1
 2. Item 2
 ```
+
 ### Getting the Source Code
 
-Include a link to your github reposistory (you have no idea how people will findy our code), and also a summary of how to clone.
-
-This project is [hosted on GitHub](https://github.com/bnluong/repo-name). You can clone this project directly using this command:
+This project is [hosted on GitHub](https://github.com/bnluong/LIDAR-filters). You can clone this project directly using this command:
 
 ```
-git clone git@github.com:bnluong/repo-name.git
+git clone git@github.com:bnluong/LIDAR-filters.git
 ```
 
 ### Building the Project
@@ -73,11 +72,11 @@ If your project provides an API, either provide details for usage in this docume
 
 ## Versioning
 
-This project uses [Semantic Versioning](http://semver.org/). For a list of available versions, see the [repository tag list](https://github.com/your/project/tags).
+This project uses [Semantic Versioning](http://semver.org/). For a list of available versions, see the [repository tag list](https://github.com/LIDAR-filters/tags).
 
 ## Contributing (Optional)
 
-We encourage public contributions! Please review [CONTRIBUTING.md](link-to-file) for details on our code of conduct and development process.
+We encourage public contributions! Please review [CONTRIBUTING](CONTRIBUTING) for details on our code of conduct and development process.
 
 ## Further Reading
 
@@ -90,11 +89,11 @@ Examples
 
 * **Bao Luong** - *Owner* - [bnluong](https://github.com/bnluong)
 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/LIDAR-filters/contributors) who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
 ## Acknowledgments
 
