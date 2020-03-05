@@ -1,10 +1,16 @@
 #ifndef RANGE_FILTER_HPP
 #define RANGE_FILTER_HPP
 
-#include "lidar-filter.hpp"
+#include "filter.hpp"
 
-class RangeFilter : LIDARFilter {
+namespace lidar_filter {
+    class RangeFilter : Filter {
+        double rangeMin;
+        double rangeMax;
+    public:
+        RangeFilter(double min, double max);
+        virtual std::vector<double>& update(std::vector<double> &currentScan);
+    };
+}
 
-};
-
-#endif
+#endif /* !RANGE_FILTER_HPP */

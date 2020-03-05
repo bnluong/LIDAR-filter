@@ -1,10 +1,17 @@
 #ifndef MEDIAN_FILTER_HPP
 #define MEDIAN_FILTER_HPP
 
-#include "lidar-filter.hpp"
+#include "filter.hpp"
 
-class MedianFilters : LIDARFilter {
+namespace lidar_filter {
+    class MedianFilter : Filter {
+        int previousScanNum;
+        std::vector<double> previousScans;
+    public:
+        MedianFilter(int d) :
+            previousScanNum(d) {}
+        virtual std::vector<double>& update(std::vector<double> &currentScan);
+    };
+}
 
-};
-
-#endif
+#endif /* !MEDIAN_FILTER_HPP */
