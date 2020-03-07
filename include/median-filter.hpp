@@ -6,10 +6,9 @@
 namespace lidar_filter {
     class MedianFilter : Filter {
         int previousScanNum;
-        std::vector<double> previousScans;
+        std::vector<std::vector<double>> previousScans;
     public:
-        MedianFilter(int d) :
-            previousScanNum(d) {}
+        MedianFilter(int d);
         virtual std::vector<double>& update(std::vector<double> &currentScan);
     };
 }
