@@ -1,3 +1,8 @@
+/** 
+ * Author: Bao Luong
+ * Description: Abstract class filter represents a base filter
+ */
+
 #ifndef LIDAR_FILTER_HPP
 #define LIDAR_FILTER_HPP
 

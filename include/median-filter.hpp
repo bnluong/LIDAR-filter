@@ -1,3 +1,8 @@
+/** 
+ * Author: Bao Luong
+ * Description: A median filter extends from the base class filter
+ */
+
 #ifndef MEDIAN_FILTER_HPP
 #define MEDIAN_FILTER_HPP
 

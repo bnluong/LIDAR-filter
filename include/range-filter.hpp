@@ -1,3 +1,8 @@
+/** 
+ * Author: Bao Luong
+ * Description: Range filter extends from the base class filter
+ */
+
 #ifndef RANGE_FILTER_HPP
 #define RANGE_FILTER_HPP
 
