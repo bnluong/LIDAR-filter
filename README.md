@@ -1,18 +1,15 @@
-# Project Title
+# LIDAR Filter
 
-Project Description.
+Various LIDAR filters that can be used on data collected by LIDAR sensors.
 
 ## Getting Started
 
-Instructions on setting up the project.
-
 ### Prerequisites & Dependencies
 
-Lists of items needed to setup/run the project.
-
 ```
-1. Item 1
-2. Item 2
+1. Environment: Linux
+2. Language: C++
+3. Tools and libraries: CMake, c++11 stl
 ```
 
 ### Getting the Source Code
@@ -25,78 +22,51 @@ git clone git@github.com:bnluong/LIDAR-filters.git
 
 ### Building the Project
 
-Instructions for how to build the project.
-
 ```
-1. Step 1
-2. Step 2
+1. Go to root directory of the project i.e LIDAR-filter/
+2. Open terminal and type the command: cmake .
+3. CMake will create a Makefile to compile the tests. 
+4. Compile by typing the command: make
+5. There are two tests that test each filter object
 ```
 
 ## Running Tests
 
-Describe how to run unit tests for your project.
-
+These are manual tests to see if the filters work on sample data and specs
 ```
-Examples
-```
-
-### Other Tests (Optional)
-
-Explain what these tests test and why.
-
-```
-Examples
-```
-
-## Installation
-
-Instructions for how to install your project's build artifacts.
-
-```
-Examples
+In the root directory of the project type: 
+1. ./bin/range-filter-manual-test.out - This tests the range filter
+2. ./bin/median-filter-manual-test.out - This tests the median filter
 ```
 
 ## Usage
 
-Instructions for using your project. Ways to run the program, how to include it in another project, etc.
+The filters can be included to operate on your data. To do so, copy the "include" folder and "src" folder to your project and include it in your code.
+
+For example: How to use range filter
 
 ```
-Examples
+#include "../include/range-filter.hpp"
+
+int main() {
+	lidar_filter::RangeFilter filter(min, max);
+	
+	/* do some work with range filter */
+	
+	return 0;
+}
 ```
 
-If your project provides an API, either provide details for usage in this document or link to the appropriate API reference documents.
+My current plan is to make more filters and make a stand-alone API
 
 ## Built With
 
-* [name](url) - Description of the tool
+* [CMake](https://cmake.org/) - CMake to generate a Makefile to compile and run the tests
 
-## Versioning
-
-This project uses [Semantic Versioning](http://semver.org/). For a list of available versions, see the [repository tag list](https://github.com/LIDAR-filters/tags).
-
-## Contributing (Optional)
-
-We encourage public contributions! Please review [CONTRIBUTING](CONTRIBUTING) for details on our code of conduct and development process.
-
-## Further Reading
-
-Provide links to other relevant documentation here.
-
-```
-Examples
-```
 ## Authors
 
 * **Bao Luong** - *Owner* - [bnluong](https://github.com/bnluong)
 
-See also the list of [contributors](https://github.com/LIDAR-filters/contributors) who participated in this project.
-
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
-## Acknowledgments
-
-Provide proper credits, shoutouts, and honorable mentions here. Also provide links to relevant repositories, blog posts, or contributors worth mentioning.
-
-Give proper credits. This could be a link to any repo which inspired you to build this project, any blogposts or links to people who contributed in this project. If you used external code, link to the original source.
